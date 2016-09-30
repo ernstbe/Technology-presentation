@@ -1,8 +1,8 @@
-UI mit Scala.JS
+UI mit Scala.JS und ?
+
 Welches Framework? 
 
 <img src="http://raw.githubusercontent.com/ernstbe/Technology-presentation/add-presentation/images/scala-js.png" />
-<img src="http://raw.githubusercontent.com/ernstbe/Technology-presentation/add-presentation/images/add.png" width="200" />
 <img src="http://raw.githubusercontent.com/ernstbe/Technology-presentation/add-presentation/images/fragezeichen.png" width="200" />
 
 
@@ -12,13 +12,13 @@ In Verbindung mit Scala.Js stehen eine Menge Frameworks zur Auswahl
 
 #HSLIDE
  
- Erstemal stellte sich die Frage :
+ Erstemal stellt sich die Frage :
   
-  Ein JavaScript oder eine Scala Library ? 
+  Eine JavaScript oder eine Scala Library ? 
 
 #VSLIDE
  
- Schaut man sich die Dokumentation von Scala.js an sieht man wie viele es gibt aber welches ist das richtige?
+ In der Dokumentation von Scala.js findet man einige beispiele 
  
 #VSLIDE
  
@@ -31,6 +31,13 @@ In Verbindung mit Scala.Js stehen eine Menge Frameworks zur Auswahl
  <h2>Scala Libaries</h2>
  
  ![ScalaFrameworks](https://raw.githubusercontent.com/ernstbe/Technology-presentation/add-presentation/images/scalaFrameworks.png) 
+
+
+#VSLIDE
+
+AngularJS wurde durch Vorgaben aus der Auswahl entfernt 
+
+![AngularJS](http://raw.githubusercontent.com/ernstbe/Technology-presentation/add-presentation/images/noAngular.jpg)
 
 #HSLIDE
 
@@ -46,14 +53,12 @@ Ich entschied mich für eine 2013 von Facebook ins Leben gerufene <i>Javascript-
 
 Warum ich mich für React entschieden habe?
 
-<img src="http://raw.githubusercontent.com/ernstbe/Technology-presentation/add-presentation/images/reactJS.jpg" />
-<img src="http://raw.githubusercontent.com/ernstbe/Technology-presentation/add-presentation/images/noAngular.jpg" />
-
-#VSLIDE 
-
 <ol>
+<li> Nahe an Bekannter Syntax </li>
+<li> Leichte 
     <li> Re-Render bei jeder Änderung </li>
-    <li> Sehr Komponenten basiert </li>
+    <li> Htmlcontetn wird als Komponenten erzeugt </li>
+    <li> Templates sind Debugfähig</li>
     <li> Geschwindigkeit durch Virutellen DOM</li>
     <li> Server Seitiges Rendering</li>
     <li> Gute Fehlermeldungen</li>
@@ -61,8 +66,21 @@ Warum ich mich für React entschieden habe?
 
 #VSLIDE
 
-<JSX />
+Desweiteren :
+ 
+![ReactJS](http://raw.githubusercontent.com/ernstbe/Technology-presentation/add-presentation/images/reactJS.jpg)
+
+
+#HSLIDE
+
+Die möglichkeiten die React bietet:
+
+#VSLIDE
+
+<h1>JSX</h1>
 Vereinfacht die erstellung der 'Komponenten'
+
+bsp:
 
 #VSLIDE
 
@@ -77,8 +95,6 @@ render: function() {
     );
 }
 ```
-
-#VSLIDE
 
 <h2>JSX</h2>
 
@@ -99,4 +115,4 @@ render: function() {
 
 #HSLIDE
 
-Thanks!
+Danke für die Aufmerksamkeit!
