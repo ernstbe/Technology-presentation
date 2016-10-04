@@ -1,21 +1,22 @@
-## Front End mit Scala.Js
+## Entwicklung einer Front-End
 ### 
 
 #HSLIDE
 
-![Scala-Js](images/scala-js.png)
+## Grundstein des Ganzen ist <img style="width: 50%; margin-top: 50px; border: none; background: none; box-shadow: none;" src="http://www.scala-js.org/assets/img/scala-js-site-logo.svg" />
 
-## Grundstein des Ganzen ist _**Scala.js**_
-
-#VSLIDE
-
-### Im Kern ist Scala.js ein Scala zu JavaScript Compiler.
-
-Er Compiliert _.scala_ Dateien in einzeln optimierte und minimierte _.js_ Dateien pro Anwendung
 
 #VSLIDE
 
-Was dem Entwickler die Möglichkeit gibt die mächtigen Sprachfunktionen von Scala zu nutzen
+### Im Kern ist Scala.js ein Compiler.
+
+Er Compiliert _.scala_ Dateien in einzeln optimierte und minimierte _.js_ Dateien
+
+![Scalajs-how-it-works](images/scalajs-how-it-works.png)
+
+#VSLIDE
+
+Was die Möglichkeit bietet die mächtigen Sprachfunktionen von Scala zu nutzen
 
 #VSLIDE
 
@@ -25,19 +26,21 @@ Zum Glück deckt Scala.js auch das ab!
 
 #VSLIDE
 
-Bei Scala.js gibt es die Möglichkeit Scala oder ein Javascript Libraries einzubinden
+Scala.js bietet die Möglichkeit angepasste Scala und Javascript Bibliotheken einzubinden
 
 #VSLIDE
  
-Da es hier um die Erstellung einer UI geht
-hier nur die Relevanten Ausschnitte der JS und Scala Bibliotheken aus den Scala.js Docs
+(Da es hier um die Erstellung einer UI geht.
+Werden hier nur die Relevanten Ausschnitte der Bibliotheken aus den Scala.js Docs gezeigt)
 
-## JavaScript Libraries
+#VSLIDE
+
+## JavaScript Bibliotheken
 ![JSFrameworks](images/jsUiFrameworks.png)
  
 #VSLIDE
 
-## Scala Libraries
+## Scala Bibliotheken
 ![ScalaFrameworks](images/scalaFrameworks.png)  
 
 #VSLIDE
@@ -80,8 +83,9 @@ Ein näherer Blick auf die Möglichkeiten die React bietet:
 
 ## JSX
 
-(Eine JavaScript Syntax Erweiterung welche wie XML aussieht)
+(<span style="color:#e49436">J</span>ava<span style="color:#e49436">S</span>cript<span style="color:#e49436">X</span>ML
 
+Eine XML-ähnliche Syntax Erweiterung für JS
 Vereinfacht die Erstellung der 'Komponenten'
 
 #VSLIDE
@@ -96,7 +100,6 @@ render: function() {
     );
 }
 ```
-
 ### JSX
 ```
 render: function() {
@@ -116,13 +119,13 @@ render: function() {
 
  Nie wieder eine _"echtes" **DOM**_-Element erstellen
  
- React übernimmt das! <!-- .element: class="fragment" -->
+ **React übernimmt das! <!-- .element: class="fragment" -->**
 
 #VSLIDE
 
 ### "VDOM"-abgleich
 
-Unterscheidet virtuelle Nodes
+Unterscheidet _virtuelle_ Nodes
 
 (vergleicht JS Objekte)
 
@@ -133,7 +136,7 @@ Unterscheidet virtuelle Nodes
 
 Transparent für den Entwickler 
 
-"Hier ist ein neuer Zustand , rendere ihn"
+"Hier ist ein neuer Zustand, rendere ihn"
 
 #HSLIDE
 
@@ -168,7 +171,7 @@ Server.on('request', function(req, res) {
 
 ### Es ist alles Virtuell!
 
-Die Client Seite kann nun den tree ändern
+Die Clientseite kann nun den tree ändern
 und damit fortfahren den Status bei Änderungen zu 
 Aktualisierung
 
@@ -197,7 +200,7 @@ React.createClass({
 
 ### Man **benötigt** nur **eine** Methode :
 
-#### render() <!-- .element: class="fragment" -->
+***<span class="fragment" style="color:#e49436">render()</span>*** 
 
 #HSLIDE
 
@@ -212,7 +215,7 @@ Das _"externe Interface"_ zu den Komponenten.
 ## State
 Der Interne Komponenten Zustand
 
-#### <span class="fragment" style:="color:#e49436">setState()</span> 
+ ***<span class="fragment" style="color:#e49436">setState()</span>*** 
 
 Führt zu einem Re-Renderen der Komponenten <!-- .element: class="fragment" -->
 
@@ -221,10 +224,11 @@ Führt zu einem Re-Renderen der Komponenten <!-- .element: class="fragment" -->
 ## Was spricht gegen React?
 
 - Benötigt Verständnis der Flux Struktur
-- Benötigt zusätzliche Libraries um eine Vollwertige App zu erstellen
+- Benötigt zusätzliche Bibliotheken um eine Vollwertige App zu erstellen
 - Sehr steile Lernkurve für Einsteiger
 
 
 #HSLIDE
 
 ## Danke für Ihre Aufmerksamkeit!
+![React-is-the-Force](images/let-the-reactjs.jpg)
