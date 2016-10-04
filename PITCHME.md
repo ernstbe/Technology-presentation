@@ -1,39 +1,47 @@
-UI mit Scala.JS und ?
-
-Welches Framework? 
+#Frontend Framework mit Scala.Js
+###Eine Tour durch die möglichkeiten
+   
+#HSLIDE
 
 <img src="http://raw.githubusercontent.com/ernstbe/Technology-presentation/add-presentation/images/scala-js.png" />
-<img src="http://raw.githubusercontent.com/ernstbe/Technology-presentation/add-presentation/images/fragezeichen.png" width="200" />
 
+##Grundstein des Ganzen ist Scala.js
 
-#HSLIDE
+#VSLIDE 
 
-In Verbindung mit Scala.Js stehen eine Menge Frameworks zur Auswahl
+Im Kern ist Scala.js ein Scala zu JavaScript Compiler.
+Er Compiliert `.scala` Dateien in einzeln optimierte und minimierte `.js` Dateien pro Anwendung
 
-#HSLIDE
- 
- Erstemal stellt sich die Frage :
-  
-  Eine JavaScript oder eine Scala Library ? 
+#VSlide
+
+Was dem Entwickler die möglichkeit gibt die mächtigen Sprachfunktionen von Scala zu nutzen. 
+
+#VSLIDE
+
+Bei Scala JS gibt es die möglichkeit ein Scala oder ein Javascript Framework zu verwenden
+
+#VSLIDE 
+
+Ein Compiler wäre aber nichts ohne ein EcoSystem aus Biblioteken und Werkzeugen
+Zum Glück deckt Scala.js auch das ab!
+
 
 #VSLIDE
  
- In der Dokumentation von Scala.js findet man einige beispiele 
- 
-#VSLIDE
- 
- <h2>JavaScript Libaries</h2> 
+ Da es hier um die erstellung einer Benutzer Oberfläche geht, nur die Relevanten ausschnitte der JS und Scala Bibliotheken aus den Scala.js Docs
+ ##JavaScript Libaries
  
  ![JSFrameworks](https://raw.githubusercontent.com/ernstbe/Technology-presentation/add-presentation/images/jsUiFrameworks.png)
  
 #VSLIDE
 
- <h2>Scala Libaries</h2>
+ ##Scala Libaries
  
  ![ScalaFrameworks](https://raw.githubusercontent.com/ernstbe/Technology-presentation/add-presentation/images/scalaFrameworks.png) 
 
 
 #VSLIDE
+
 
 AngularJS wurde durch Vorgaben aus der Auswahl entfernt 
 
@@ -41,28 +49,26 @@ AngularJS wurde durch Vorgaben aus der Auswahl entfernt
 
 #HSLIDE
 
-Ich entschied mich für eine 2013 von Facebook ins Leben gerufene <i>Javascript-Bibliothek</i>
+Die Entscheidung fiel auf die, 2013 von Facebook ins Leben gerufene <i>Javascript-Bibliothek</i>
 
 #HSLIDE
 
 <img src="http://raw.githubusercontent.com/ernstbe/Technology-presentation/add-presentation/images/react-logo-colored.png" width="420"/>
 
-<h1>React(.JS)</h1>
+#React(.JS)
 
 #VSLIDE
 
-Warum ich mich für React entschieden habe?
+Warum React ?
 
-<ol>
-<li> Nahe an Bekannter Syntax </li>
-<li> Leichte 
-    <li> Re-Render bei jeder Änderung </li>
-    <li> Htmlcontetn wird als Komponenten erzeugt </li>
-    <li> Templates sind Debugfähig</li>
-    <li> Geschwindigkeit durch Virutellen DOM</li>
-    <li> Server Seitiges Rendering</li>
-    <li> Gute Fehlermeldungen</li>
-</ol>
+    -  Nahe an Bekannter Syntax
+    -  Leichte Handhabung
+    -  Re-Render bei jeder Änderung 
+    -  Htmlcontent wird als Komponenten erzeugt 
+    -  Templates sind Debugfähig
+    -  Geschwindigkeit durch Virutellen DOM
+    -  Server Seitiges Rendering
+    -  Gute Fehlermeldungen
 
 #VSLIDE
 
@@ -77,14 +83,16 @@ Die möglichkeiten die React bietet:
 
 #VSLIDE
 
-<h1>JSX</h1>
+#JSX
+(Eine JavaScript Syntax erweiterung welche wie XML aussieht)
+
 Vereinfacht die erstellung der 'Komponenten'
 
 bsp:
 
 #VSLIDE
 
-<h2>Vanilla JS</h2>
+##Vanilla JS
 
 ```
 render: function() {
@@ -96,7 +104,7 @@ render: function() {
 }
 ```
 
-<h2>JSX</h2>
+##JSX
 
 ```
 render: function() {
@@ -109,10 +117,6 @@ render: function() {
     );
 }
 ```
-
-
-
-
 #HSLIDE
 
 Danke für die Aufmerksamkeit!
