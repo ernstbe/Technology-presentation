@@ -2,3 +2,8 @@
     border: 0;
     box-shadow: none;
 }
+
+
+.reveal code {
+    background-color: #fefefe;
+}

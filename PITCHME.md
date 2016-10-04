@@ -1,9 +1,9 @@
-## Frontend Framework mit Scala.Js
-### Eine Tour durch die möglichkeiten
+## Front End mit Scala.Js
+### 
 
 #HSLIDE
 
-<img src="http://raw.githubusercontent.com/ernstbe/Technology-presentation/add-presentation/images/scala-js.png" />
+![ScalaJS](http://raw.githubusercontent.com/ernstbe/Technology-presentation/add-presentation/images/scala-js.png)
 
 ## Grundstein des Ganzen ist _**Scala.js**_
 
@@ -15,38 +15,36 @@ Er Compiliert _`.scala`_ Dateien in einzeln optimierte und minimierte _`.js`_ Da
 
 #VSLIDE
 
-Was dem Entwickler die möglichkeit gibt die mächtigen Sprachfunktionen von Scala zu nutzen. 
+Was dem Entwickler die Möglichkeit gibt die mächtigen Sprachfunktionen von Scala zu nutzen
 
 #VSLIDE
 
-Ein Compiler wäre aber nichts ohne ein EcoSystem aus Biblioteken und Werkzeugen
+Ein Compiler wäre aber nichts ohne ein Ökosystem aus Bibliotheken und Werkzeugen
 
 Zum Glück deckt Scala.js auch das ab!
 
 #VSLIDE
 
-Bei Scala.js gibt es die möglichkeit Scala oder ein Javascript Frameworks einzubinden
+Bei Scala.js gibt es die Möglichkeit Scala oder ein Javascript Libraries einzubinden
 
 #VSLIDE
  
-Da es hier um die erstellung einer UI geht
-hier nur die Relevanten ausschnitte der JS und Scala Bibliotheken aus den Scala.js Docs
+Da es hier um die Erstellung einer UI geht
+hier nur die Relevanten Ausschnitte der JS und Scala Bibliotheken aus den Scala.js Docs
 
-## JavaScript Libaries
+## JavaScript Libraries
 ![JSFrameworks](https://raw.githubusercontent.com/ernstbe/Technology-presentation/add-presentation/images/jsUiFrameworks.png)
  
 #VSLIDE
 
-## Scala Libaries
+## Scala Libraries
 ![ScalaFrameworks](https://raw.githubusercontent.com/ernstbe/Technology-presentation/add-presentation/images/scalaFrameworks.png) 
-
 
 #VSLIDE
 
-**AngularJS** wurde durch Vorgaben aus der Auswahl ausgeschloßen 
+**AngularJS** wurde durch Vorgaben aus der Auswahl ausgeschlossen 
 
 ![AngularJS](http://raw.githubusercontent.com/ernstbe/Technology-presentation/add-presentation/images/noAngular.jpg)
-
 
 #HSLIDE
 
@@ -63,7 +61,6 @@ Die Entscheidung fiel auf die, 2013 von Facebook ins Leben gerufene <i>Javascrip
 ## Warum React ?
 
 -  Nahe an Bekannter Syntax 
--  Leichte Handhabung
 -  Re-Render bei jeder Änderung 
 -  Htmlcontent wird als Komponenten erzeugt 
 -  Templates sind Debugfähig
@@ -83,9 +80,9 @@ Ein näherer Blick auf die Möglichkeiten die React bietet:
 
 ## JSX
 
-(Eine JavaScript Syntax erweiterung welche wie XML aussieht)
+(Eine JavaScript Syntax Erweiterung welche wie XML aussieht)
 
-Vereinfacht die erstellung der 'Komponenten'
+Vereinfacht die Erstellung der 'Komponenten'
 
 #VSLIDE
 
@@ -218,6 +215,15 @@ Der Interne Komponenten Zustand
 #### setState() <!-- .element: class="fragment" -->
 
 Führt zu einem Re-Renderen der Komponenten <!-- .element: class="fragment" -->
+
+#HSLIDE
+
+## Was spricht gegen React?
+
+- Benötigt Verständnis der Flux Struktur
+- Benötigt zusätzliche Libraries um eine Vollwertige App zu erstellen
+- Sehr steile Lernkurve für Einsteiger
+
 
 #HSLIDE
 
