@@ -3,7 +3,7 @@
 
 #HSLIDE
 
-![ScalaJS](http://raw.githubusercontent.com/ernstbe/Technology-presentation/add-presentation/images/scala-js.png)
+![Scala-Js](images/scala-js.png)
 
 ## Grundstein des Ganzen ist _**Scala.js**_
 
@@ -11,7 +11,7 @@
 
 ### Im Kern ist Scala.js ein Scala zu JavaScript Compiler.
 
-Er Compiliert _`.scala`_ Dateien in einzeln optimierte und minimierte _`.js`_ Dateien pro Anwendung
+Er Compiliert _.scala_ Dateien in einzeln optimierte und minimierte _.js_ Dateien pro Anwendung
 
 #VSLIDE
 
@@ -33,18 +33,18 @@ Da es hier um die Erstellung einer UI geht
 hier nur die Relevanten Ausschnitte der JS und Scala Bibliotheken aus den Scala.js Docs
 
 ## JavaScript Libraries
-![JSFrameworks](https://raw.githubusercontent.com/ernstbe/Technology-presentation/add-presentation/images/jsUiFrameworks.png)
+![JSFrameworks](images/jsUiFrameworks.png)
  
 #VSLIDE
 
 ## Scala Libraries
-![ScalaFrameworks](https://raw.githubusercontent.com/ernstbe/Technology-presentation/add-presentation/images/scalaFrameworks.png) 
+![ScalaFrameworks](images/scalaFrameworks.png)  
 
 #VSLIDE
 
 **AngularJS** wurde durch Vorgaben aus der Auswahl ausgeschlossen 
 
-![AngularJS](http://raw.githubusercontent.com/ernstbe/Technology-presentation/add-presentation/images/noAngular.jpg)
+![AngularJS](images/noAngular.jpg)
 
 #HSLIDE
 
@@ -52,7 +52,7 @@ Die Entscheidung fiel auf die, 2013 von Facebook ins Leben gerufene <i>Javascrip
 
 #HSLIDE
 
-![ReactLogo](http://raw.githubusercontent.com/ernstbe/Technology-presentation/add-presentation/images/react-logo-colored.png)
+![React-Logo](images/react-logo-colored.png)
 
 ## React(.JS)
 
@@ -70,7 +70,7 @@ Die Entscheidung fiel auf die, 2013 von Facebook ins Leben gerufene <i>Javascrip
 
 #VSLIDE
 
-![ReactJS](http://raw.githubusercontent.com/ernstbe/Technology-presentation/add-presentation/images/reactJS.jpg)
+![ReactJS](images/reactJS.jpg)
 
 #HSLIDE
 
@@ -175,7 +175,7 @@ Aktualisierung
 #HSLIDE
 
 ## Gute Fehlermeldungen
-![errorMessages](http://raw.githubusercontent.com/ernstbe/Technology-presentation/add-presentation/images/great-error-messages.png)
+![errorMessages](images/great-error-messages.png)
 
 #HSLIDE
 
@@ -212,7 +212,7 @@ Das _"externe Interface"_ zu den Komponenten.
 ## State
 Der Interne Komponenten Zustand
 
-#### setState() <!-- .element: class="fragment" -->
+#### <span class="fragment" style:="color:#e49436">setState()</span> 
 
 Führt zu einem Re-Renderen der Komponenten <!-- .element: class="fragment" -->
 
