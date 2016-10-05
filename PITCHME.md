@@ -1,37 +1,19 @@
-## Entwicklung einer Front-End
+## Entwicklung einer Front-End 
 ### 
 
 #HSLIDE
 
-## Grundstein des Ganzen ist <img style="width: 50%; margin-top: 50px; border: none; background: none; box-shadow: none;" src="http://www.scala-js.org/assets/img/scala-js-site-logo.svg" />
+## Grundstein des Ganzen <img style="width: 50%; margin-top: 50px; border: none; background: none; box-shadow: none;" src="http://www.scala-js.org/assets/img/scala-js-site-logo.svg" />
 
 
 #VSLIDE
 
 ### Im Kern ist Scala.js ein Compiler.
-
-Er Compiliert _.scala_ Dateien in einzeln optimierte und minimierte _.js_ Dateien
-
 ![Scalajs-how-it-works](images/scalajs-how-it-works.png)
 
 #VSLIDE
 
-Was die Möglichkeit bietet die mächtigen Sprachfunktionen von Scala zu nutzen
-
-#VSLIDE
-
-Ein Compiler wäre aber nichts ohne ein Ökosystem aus Bibliotheken und Werkzeugen
-
-Zum Glück deckt Scala.js auch das ab!
-
-#VSLIDE
-
-Scala.js bietet die Möglichkeit angepasste Scala und Javascript Bibliotheken einzubinden
-
-#VSLIDE
- 
-(Da es hier um die Erstellung einer UI geht.
-Werden hier nur die Relevanten Ausschnitte der Bibliotheken aus den Scala.js Docs gezeigt)
+Ökosystem ?
 
 #VSLIDE
 
@@ -45,13 +27,7 @@ Werden hier nur die Relevanten Ausschnitte der Bibliotheken aus den Scala.js Doc
 
 #VSLIDE
 
-**AngularJS** wurde durch Vorgaben aus der Auswahl ausgeschlossen 
-
 ![AngularJS](images/noAngular.jpg)
-
-#HSLIDE
-
-Die Entscheidung fiel auf die, 2013 von Facebook ins Leben gerufene <i>Javascript-Bibliothek</i>
 
 #HSLIDE
 
@@ -63,30 +39,36 @@ Die Entscheidung fiel auf die, 2013 von Facebook ins Leben gerufene <i>Javascrip
 
 ## Warum React ?
 
--  Nahe an Bekannter Syntax 
--  Re-Render bei jeder Änderung 
--  Htmlcontent wird als Komponenten erzeugt 
--  Templates sind Debugfähig
--  Geschwindigkeit durch Virutellen DOM
--  Server Seitiges Rendering
--  Gute Fehlermeldungen
+-  Nahe an Bekannter Syntax <!-- .element: class="fragment" -->
+-  Re-Render bei jeder Änderung  <!-- .element: class="fragment" -->
+-  Htmlcontent wird als Komponenten erzeugt  <!-- .element: class="fragment" -->
+-  Templates sind Debugfähig <!-- .element: class="fragment" -->
+-  Geschwindigkeit durch Virutellen DOM <!-- .element: class="fragment" -->
+-  Server Seitiges Rendering <!-- .element: class="fragment" -->
+-  Gute Fehlermeldungen <!-- .element: class="fragment" -->
+-  Gute Tesbarkeit durch JavaScript <!-- .element: class="fragment" -->
 
 #VSLIDE
 
-![ReactJS](images/reactJS.jpg)
+## Was spricht gegen React?
+
+- Benötigt eine Umgebung um eine Vollwertige App zu erstellen <!-- .element: class="fragment" -->
+- Sehr steile Lernkurve für Einsteiger <!-- .element: class="fragment" -->
+
+
+#VSLIDE
+
+![Reactjs](images/reactJS.jpg)
 
 #HSLIDE
 
-Ein näherer Blick auf die Möglichkeiten die React bietet:
+Was bietet React.js ?
 
 #VSLIDE
 
 ## JSX
 
-(<span style="color:#e49436">J</span>ava<span style="color:#e49436">S</span>cript<span style="color:#e49436">X</span>ML
-
-Eine XML-ähnliche Syntax Erweiterung für JS
-Vereinfacht die Erstellung der 'Komponenten'
+(<span style="color:#e49436">J</span>ava<span style="color:#e49436">S</span>cript<span style="color:#e49436">X</span>ML)
 
 #VSLIDE
 
@@ -113,32 +95,16 @@ render: function() {
 }
 ```
 
-#HSLIDE
+#VSLIDE
 
 ## Virtueller DOM
 
- Nie wieder eine _"echtes" **DOM**_-Element erstellen
+ Nie wieder ein _"echtes" **DOM**_-Element erstellen
  
  **React übernimmt das! <!-- .element: class="fragment" -->**
+ 
 
 #VSLIDE
-
-### "VDOM"-abgleich
-
-Unterscheidet _virtuelle_ Nodes
-
-(vergleicht JS Objekte)
-
-
-#VSLIDE
-
-### "VDOM"-abgleich
-
-Transparent für den Entwickler 
-
-"Hier ist ein neuer Zustand, rendere ihn"
-
-#HSLIDE
 
 ### Server-   <!-- .element: class="fragment" -->
 
@@ -167,20 +133,12 @@ Server.on('request', function(req, res) {
 });
 ```
 
-#HSLIDE
-
-### Es ist alles Virtuell!
-
-Die Clientseite kann nun den tree ändern
-und damit fortfahren den Status bei Änderungen zu 
-Aktualisierung
-
-#HSLIDE
+#VSLIDE
 
 ## Gute Fehlermeldungen
 ![errorMessages](images/great-error-messages.png)
 
-#HSLIDE
+#VSLIDE
 
 ## Automatisch gebundene Funktionen
 ```
@@ -196,13 +154,13 @@ React.createClass({
 });
 ```
 
-#HSLIDE
+#VSLIDE
 
-### Man **benötigt** nur **eine** Methode :
+### Eine **benötigt** Methode :
 
 ***<span class="fragment" style="color:#e49436">render()</span>*** 
 
-#HSLIDE
+#VSLIDE
 
 ## Props
 
@@ -210,7 +168,7 @@ Das _"externe Interface"_ zu den Komponenten.
 
 **propTypes** erlauben die Validierung des Input
 
-#HSLIDE
+#VSLIDE
 
 ## State
 Der Interne Komponenten Zustand
@@ -221,12 +179,30 @@ Führt zu einem Re-Renderen der Komponenten <!-- .element: class="fragment" -->
 
 #HSLIDE
 
-## Was spricht gegen React?
+<img style="width: 30%; border: none; background: none; box-shadow: none;" src="https://facebook.github.io/flux/img/flux_logo.svg" /> 
 
-- Benötigt Verständnis der Flux Struktur
-- Benötigt zusätzliche Bibliotheken um eine Vollwertige App zu erstellen
-- Sehr steile Lernkurve für Einsteiger
+## Die Flux Struktur 
 
+
+#VSLIDE
+
+Daten in Flux Apps fließen in eine Richtung
+
+![Flux](images/flux-diagram.png)
+
+#VSLIDE
+
+Die Views lösen bei Userinteraktionen Actions aus
+
+![Flux-with-client-action](images/flux-diagram-with-client-action.png)
+
+#VSLIDE
+
+![Flux-with-background](images/flux-diagram-with-background.png)
+
+#VSLIDE
+
+## Testbarkeit
 
 #HSLIDE
 
