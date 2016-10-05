@@ -1,4 +1,4 @@
-## Entwicklung einer Front-End
+## Entwicklung einer Front-End 
 ### 
 
 #HSLIDE
@@ -70,6 +70,16 @@ Die Entscheidung fiel auf die, 2013 von Facebook ins Leben gerufene <i>Javascrip
 -  Geschwindigkeit durch Virutellen DOM
 -  Server Seitiges Rendering
 -  Gute Fehlermeldungen
+-  Gute Tesbarkeit durch pures JavaScript
+
+#VSLIDE
+
+## Was spricht gegen React?
+
+- Benötigt Verständnis der Flux Struktur
+- Benötigt zusätzliche Bibliotheken um eine Vollwertige App zu erstellen
+- Sehr steile Lernkurve für Einsteiger
+
 
 #VSLIDE
 
@@ -86,7 +96,7 @@ Ein näherer Blick auf die Möglichkeiten die React bietet:
 (<span style="color:#e49436">J</span>ava<span style="color:#e49436">S</span>cript<span style="color:#e49436">X</span>ML
 
 Eine XML-ähnliche Syntax Erweiterung für JS
-Vereinfacht die Erstellung der 'Komponenten'
+Vereinfacht die Handhabung
 
 #VSLIDE
 
@@ -113,32 +123,17 @@ render: function() {
 }
 ```
 
-#HSLIDE
+#VSLIDE
 
 ## Virtueller DOM
 
  Nie wieder eine _"echtes" **DOM**_-Element erstellen
  
  **React übernimmt das! <!-- .element: class="fragment" -->**
+ 
+ Steigert die Geschwindigkeit
 
 #VSLIDE
-
-### "VDOM"-abgleich
-
-Unterscheidet _virtuelle_ Nodes
-
-(vergleicht JS Objekte)
-
-
-#VSLIDE
-
-### "VDOM"-abgleich
-
-Transparent für den Entwickler 
-
-"Hier ist ein neuer Zustand, rendere ihn"
-
-#HSLIDE
 
 ### Server-   <!-- .element: class="fragment" -->
 
@@ -167,20 +162,12 @@ Server.on('request', function(req, res) {
 });
 ```
 
-#HSLIDE
-
-### Es ist alles Virtuell!
-
-Die Clientseite kann nun den tree ändern
-und damit fortfahren den Status bei Änderungen zu 
-Aktualisierung
-
-#HSLIDE
+#VSLIDE
 
 ## Gute Fehlermeldungen
 ![errorMessages](images/great-error-messages.png)
 
-#HSLIDE
+#VSLIDE
 
 ## Automatisch gebundene Funktionen
 ```
@@ -196,13 +183,13 @@ React.createClass({
 });
 ```
 
-#HSLIDE
+#VSLIDE
 
-### Man **benötigt** nur **eine** Methode :
+### Eine **benötigt** Methode :
 
 ***<span class="fragment" style="color:#e49436">render()</span>*** 
 
-#HSLIDE
+#VSLIDE
 
 ## Props
 
@@ -210,7 +197,7 @@ Das _"externe Interface"_ zu den Komponenten.
 
 **propTypes** erlauben die Validierung des Input
 
-#HSLIDE
+#VSLIDE
 
 ## State
 Der Interne Komponenten Zustand
@@ -221,11 +208,25 @@ Führt zu einem Re-Renderen der Komponenten <!-- .element: class="fragment" -->
 
 #HSLIDE
 
-## Was spricht gegen React?
 
-- Benötigt Verständnis der Flux Struktur
-- Benötigt zusätzliche Bibliotheken um eine Vollwertige App zu erstellen
-- Sehr steile Lernkurve für Einsteiger
+## Die Flux Struktur
+<img style="width: 30%; margin-top: 50px; border: none; background: none; box-shadow: none;" src="https://facebook.github.io/flux/img/flux_logo.svg" /> 
+
+Es ist nicht pflicht sie zu verwenden wird jedoch in Verbindung mit React.js empfohlen
+
+#VSLIDE
+
+Daten in Flux Applikationen fließen in eine Richtung
+
+![Flux](images/flux-diagram.png)
+
+
+#VSLIDE
+
+Die Views können neue Actions auf Grund von Userinteraction auslösen
+
+![Flux-wit-client-action](images/flux-diagram-with-client-action.png)
+
 
 
 #HSLIDE
